@@ -19,7 +19,7 @@ Details live in `work/<id>/STATUS.md`.
 
 | Task | Sub task | Description | Status | Last updated |
 |---|---|---|---|---|
-| floci.groundzero | | W-2026-0001: Floci-only groundzero tasks W1–W4, owner dev-lead; box env OK (docker, make, arm64 aarch64); 👀 for Mario: #1250, #1248, #1257, #1260; #1252 @57708ced internal APPROVED, 1 open Copilot thread; #1255 @5124119e Copilot clean, test-delta fix 14aad90b on Floci run; #1242 @75c3be6b internal APPROVED, Copilot no open issues, dev-lead ready call | 🔄 | 2026-10-23 15:03 |
+| floci.groundzero |  | W-2026-0001: Floci-only groundzero tasks W1–W4, owner dev-lead; box env OK (docker, make, arm64 aarch64); Mario merged #1248, #1255, #1250 (15:26–15:36) and #1263 (16:42); #1242 closed (Floci-only rule); open: #1252 @f234681a ready for Mario's merge (👀); docs.ingestionsvc #1258 not started | 🔄 | 2026-10-23 18:08 |
 | floci.groundzero | 27.12 | Qualified ECR port range (#1212) | ✅ | 2026-10-22 11:07 |
 | floci.groundzero | 27.14 | Local fleet indexing readiness (#1213) | ✅ | 2026-10-22 11:07 |
 | floci.groundzero | 27.13 | Already on main; closed in #1213 | ✅ | 2026-10-22 11:07 |
@@ -30,18 +30,19 @@ Details live in `work/<id>/STATUS.md`.
 | floci.groundzero | 27.20 | Fleet index search tests on Floci (#1229) | ✅ | 2026-10-22 13:59 |
 | floci.groundzero | 27.16.2 | Actuation shadow topic rule tests (#1227) | ✅ | 2026-10-22 14:34 |
 | floci.groundzero | 27.16.3 | Corerouter shadow mirror tests on Floci (#1230) | ✅ | 2026-10-22 16:17 |
-| floci.groundzero | 27.16.4 | FG-1 FIXED on floci:latest 07ced9c6; PR #1255 (Closes #1232) HEAD 14aad90b: Copilot r2 @5124119e approval recommended, 0 threads; code + clean-arch APPROVED @849de752, hex APPROVED_DEGRADED (until #1257 merges); code delta APPROVED @5124119e; fixes pushed 14aad90b (loop guard, page cap, transform filter, service-test logLevel trace; Floci -race rc=0); test APPROVED_DEGRADED @14aad90b; minors (trace logLevel out of docs tag region, exact count) -> golang-pro; code APPROVED @14aad90b (L1 extra unit cases folded in) | 🔄 | 2026-10-23 15:13 |
-| floci.groundzero | 27.16.4a | ingestionsvc go-arch-lint map, PR #1257 (Closes #1256) HEAD 7139f4b8: code + hexagonal + Lead Architect APPROVED; marked ready, Copilot clean (0 comments) (golang-pro); LINT.md count restack needed if #1250 merges first | 👀 | 2026-10-23 12:59 |
-| floci.groundzero | adr.0001 | umbrella ADR go-arch-lint map per service, PR #1260 (code + LA APPROVED @105a4eff; ready, Copilot CLEAN @3d8f6dea; code + LA APPROVED @392d8a7e; Copilot CLEAN @392d8a7e; merge-ready) (Closes #1259) at 392d8a7e (technical-writer): Lead Architect content check + code review | 👀 | 2026-10-23 13:10 |
+| floci.groundzero | 27.16.4 | FG-1 fixed on floci:latest 07ced9c6; PR #1255 (Closes #1232) MERGED by Mario 15:28 at 9f33caca (98331222); r4 Copilot fixes c402a3f4 pushed after merge, not on main -> follow-up PR needed (dev-lead) | ✅ | 2026-10-23 15:40 |
+| floci.groundzero | 27.16.4a | ingestionsvc go-arch-lint map, PR #1257 (Closes #1256) HEAD 7139f4b8: code + hexagonal + Lead Architect APPROVED; marked ready, Copilot clean (0 comments) (golang-pro); LINT.md count restack needed if #1250 merges first ; MERGED by Mario | ✅ | 2026-10-23 15:33 |
+| floci.groundzero | adr.0001 | umbrella ADR go-arch-lint map per service, PR #1260 (code + LA APPROVED @105a4eff; ready, Copilot CLEAN @3d8f6dea; code + LA APPROVED @392d8a7e; Copilot CLEAN @392d8a7e; merge-ready) (Closes #1259) at 392d8a7e (technical-writer): Lead Architect content check + code review ; MERGED by Mario (01910b2b) | ✅ | 2026-10-23 15:35 |
 | floci.groundzero | docs.ingestionsvc | follow-up issue #1258 ingestionsvc service docs (filed, Incoming, not started) | ⏳ | 2026-10-23 12:48 |
 | floci.groundzero | 39.11 | W3: delete the 2 GoBridge skips (#1234) | ✅ | 2026-10-23 09:15 |
 | floci.groundzero | 27.16.1 | W4: eventsvc ESM/alarm/runtime (#1240) | ✅ | 2026-10-23 09:18 |
-| floci.groundzero | 27.1 | W4: APIGW v1 contract cases (#1242); Mario 10:41: drop x-amzn-ErrorType asserts + FG-7 skip; head 75c3be6b (retitled, comment fixes); gates green except pre-existing cmd/cblicense (#1245); code delta APPROVED @75c3be6b; test APPROVED_DEGRADED (no CI e2e); Copilot @75c3be6b no open issues, 0 threads ("needs a closer look" note on shared GroundZero setup); checks green; dev-lead call whether ready for Mario | 🔄 | 2026-10-23 15:03 |
+| floci.groundzero | 27.1 | W4: APIGW v1 contract cases (#1242): closed unmerged 15:26 and #1241 closed not planned, per Mario 15:24 Floci-only rule (audit: Floci-only MOCK API); branch kept | ✅ | 2026-10-23 15:40 |
 | floci.groundzero | 27.27 | W4: remove Cognito CustomDomain workarounds (#1236) | ✅ | 2026-10-23 09:17 |
-| floci.groundzero | 27.27a | buildingsvc go-arch-lint map, PR #1250 (Closes #1249) at 798b11c5: code + hexagonal APPROVED; Copilot clean; CI green; Lead Architect APPROVED as baseline condition MET (#1261 filed+linked); ON CONDITION: tracking issue (depOnAnyVendor true -> outbound ports) filed + linked in body -> golang-pro | 👀 | 2026-10-23 12:53 |
-| floci.groundzero | machine.setup | Linux build box setup script (#1248): code + security APPROVED at f23dd485; Copilot CLEAN at head 36292726; code + security delta APPROVED @36292726 (lows -> #1252); merge-ready | 👀 | 2026-10-23 13:06 |
-| floci.groundzero | machine.setup.arm64 | Follow-up #1252 (Closes #1251, arm64 binfmt; #1248 merged forward; IPv6 legacy docker rules + dnsmasq/DOCKER-USER v6 hardening -> release-config-mgr): head 57708ced, Build green; real run green; code + security delta APPROVED @57708ced; 1 open Copilot thread (14:40, machine-setup.sh recovery steps need a cbdeploy rerun) to fix (release-config-mgr) ; head 8cac9d1d (cbdeploy link warning fix), Copilot not responding; code delta APPROVED @8cac9d1d; one more Copilot request pending | 🔄 | 2026-10-23 15:14 |
+| floci.groundzero | 27.27a | buildingsvc go-arch-lint map, PR #1250 (Closes #1249): code + hexagonal + Lead Architect APPROVED, merge-main 37d14373 code delta APPROVED; MERGED by Mario 15:36 (865f50cc) | ✅ | 2026-10-23 15:40 |
+| floci.groundzero | machine.setup | Linux build box setup script (#1248): code + security APPROVED, Copilot clean at 36292726; MERGED by Mario 15:26 (ec00bd89) | ✅ | 2026-10-23 15:40 |
+| floci.groundzero | machine.setup.arm64 | Follow-up #1252 (Closes #1251, arm64 binfmt; IPv6 docker rules + dnsmasq/DOCKER-USER v6 hardening; release-config-mgr) @f234681a: code (Delta 11) + security APPROVED @f234681a (Low L-1 open, non-blocking); Copilot review of f234681a: no open issues, 0 unresolved threads; checks green (Build/unit skipped, waived by Mario 17:09–17:10); waiting on Mario's merge | 👀 | 2026-10-23 18:08 |
 | floci.groundzero | 27.29 | W4: un-skip SUR LogImport (#1238) | ✅ | 2026-10-23 09:17 |
+| floci.groundzero | 27.16.4b | #1255 post-merge Copilot fixes as PR #1263 (Closes #1262) @0cc8726b: code + test APPROVED, Copilot clean; MERGED by Mario 16:42 (golang-pro, dev-lead) | ✅ | 2026-10-23 16:43 |
 | makefile.linux | | W-2026-0004: all teos make targets on Debian + macOS, OS logic isolated | 📐 | 2026-10-22 13:42 |
 | makefile.linux | T1 os-detect | `make/os.mk` plus per-OS files | 📐 | 2026-10-22 13:14 |
 | makefile.linux | T2 tool-path | GOBIN / npm bin on PATH | 📐 | 2026-10-22 13:14 |
@@ -62,14 +63,17 @@ Details live in `work/<id>/STATUS.md`.
 | makefile.linux | T17 runner-locks | Batch runners honour worktree locks | 📐 | 2026-10-22 13:18 |
 | hostarch.builds | | W-2026-0002: host-arch builds, arm64 for AWS; ≈3–4 days, needs ADR; after W-0001 | ⏳ | 2026-10-21 15:40 |
 | lint.arch | | W-2026-0003: lint-arch targets for go-core + devicesvc | ⏳ | 2026-10-21 16:04 |
+| ops.cleanup |  | Post-merge cleanup (Mario 16:07): 14 merged worktrees/branches removed, clean-caches run; disk 40G->26G used. Kept #1252, #1263, #1240 (local 376519e6), backup b627fdaf. Periodic: dev-lead triggers, release-config-mgr executes | ✅ | 2026-10-23 16:14 |
+| ops.cleanup | cleanup.r3 | Post-merge cleanup round 3 (#1263, #1265): worktrees/branches removed, main ff f3a1d6d7, clean-caches incl. golangci; disk 27G->24G used | ✅ | 2026-10-23 16:45 |
+| build.clean-caches-golangci |  | make clean-caches also clears golangci-lint cache (Mario go 16:24 via Solo); issue #1264, PR #1265 @04c99d00 (cache clean only, no fallback per Mario 16:25): code APPROVED, Copilot clean, checks green; MERGED by Mario 16:42 (release-config-mgr) | ✅ | 2026-10-23 16:43 |
 
 ## Blocked on Mario
 
 - makefile.linux (W-2026-0004): go for T1–T17 (requested 2026-10-22 13:42 in #teos-grokbot).
 - hostarch.builds (W-2026-0002): go to start, after floci.groundzero is done (needs an ADR).
 - lint.arch (W-2026-0003): go to start.
-- floci.groundzero (W-2026-0001): merge #1250 (👀 12:53), #1248 (👀 13:06), #1260 (👀 13:10) and #1257 (👀 12:59; restack LINT.md to 12 if #1250 lands first).
 - floci.groundzero (W-2026-0001): Floci gap 50.5 (FG-7, API-key 403 without x-amzn-ErrorType) still present in mariotoffia/floci:latest sha256:07ced9c6; no longer blocks 27.1 (#1242) after Mario's 10:41 decision, tracked on Mario's Floci list.
 - floci.groundzero (W-2026-0001): no go needed (it covers all sub tasks); each PR still needs Mario's merge.
 - floci.groundzero follow-up (for lint.arch W-2026-0003, not started): LINT.md "Not yet mapped" list is stale (~25 services/providers unmapped); reported by technical-writer 12:53.
 - docs follow-up (lint.arch): LINT.md:222 lists tklocal as mapped but it has no map (code-reviewer 12:55).
+- floci.groundzero (W-2026-0001): Mario 15:24 Floci-only rule — audit done: only #1242 is Floci-only (closing); #1255 keeps all (real TEOS path); rest infra/lint/docs. 15:27

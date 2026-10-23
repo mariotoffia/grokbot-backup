@@ -288,9 +288,10 @@
       "holder": "golang-pro",
       "owner": "golang-pro",
       "since": "2026-10-22T17:40:00+02:00",
-      "state": "active",
-      "status": "active",
-      "worktree": "/workspace/repos/teos/work/git-worktree/W-2026-0001-t27-1-apigw-contract-cases"
+      "state": "released (#1242 closed unmerged by Mario decision 2026-10-23 15:24, Floci-only tests)",
+      "status": "released",
+      "worktree": "/workspace/repos/teos/work/git-worktree/W-2026-0001-t27-1-apigw-contract-cases",
+      "released_at": "2026-10-23T15:54:00+02:00"
     },
     {
       "work_id": "W-2026-0001",
@@ -646,8 +647,69 @@
       ],
       "holder": "core-svc-dev T-27.16.4 #1255 copilot-r3 ingestion-service",
       "since": "2026-10-23T15:13:32+02:00",
-      "state": "active",
-      "status": "active"
+      "state": "released",
+      "status": "released",
+      "released": "2026-10-23T15:15:53+02:00"
+    },
+    {
+      "work_id": "W-2026-0001",
+      "task": "floci-harness-run",
+      "globs": [
+        "<exclusive Floci service/integration harness run>"
+      ],
+      "holder": "core-svc-dev T-27.16.4 #1255 copilot-r4 ingestion-service",
+      "since": "2026-10-23T15:33:52+02:00",
+      "state": "released",
+      "status": "released",
+      "released": "2026-10-23T15:36:22+02:00"
+    },
+    {
+      "work_id": "W-2026-0001",
+      "task": "floci-harness-run",
+      "globs": [
+        "<exclusive Floci service/integration harness run>"
+      ],
+      "holder": "core-svc-dev #1262 ingestion-log-review-followup ingestion-service",
+      "since": "2026-10-23T15:42:21+02:00",
+      "state": "released",
+      "status": "released",
+      "released": "2026-10-23T15:44:53+02:00"
+    },
+    {
+      "work_id": "W-2026-0001",
+      "task": "floci-harness-run",
+      "globs": [
+        "<exclusive Floci service/integration harness run>"
+      ],
+      "holder": "core-svc-dev #1262 ingestion-log-review-followup ingestion-service",
+      "since": "2026-10-23T15:57:21+02:00",
+      "state": "released",
+      "status": "released",
+      "released": "2026-10-23T15:58:39+02:00"
+    },
+    {
+      "work_id": "W-2026-0001",
+      "task": "floci-harness-run",
+      "globs": [
+        "<exclusive Floci service/integration harness run>"
+      ],
+      "holder": "core-svc-dev #1262 ingestion-log-review-followup ingestion-service",
+      "since": "2026-10-23T15:59:21+02:00",
+      "state": "released",
+      "status": "released",
+      "released": "2026-10-23T16:02:24+02:00"
+    },
+    {
+      "work_id": "W-2026-0001",
+      "task": "floci-harness-run",
+      "globs": [
+        "<exclusive Floci service/integration harness run>"
+      ],
+      "holder": "core-svc-dev #1262 ingestion-log-review-followup ingestion-service",
+      "since": "2026-10-23T16:15:13+02:00",
+      "state": "released",
+      "status": "released",
+      "released": "2026-10-23T16:19:51+02:00"
     }
   ]
 }

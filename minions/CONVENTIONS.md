@@ -69,7 +69,10 @@ Org `Thiink-LLC`. `gh` needs the `project` scope (`gh auth status | grep project
 
 Priority and Size are **org issue fields**, not Project fields (`gh project item-edit` won't set them).
 
-1. Issue: `gh label list -R Thiink-LLC/<repo>` (existing labels only), then `gh issue create -R Thiink-LLC/<repo> -t "<short task-name title, no W-id>" -b "<body>" -a mariotoffia -l "<labels>"`. Node id: `gh issue view <N> -R Thiink-LLC/<repo> --json id -q .id`.
+1. Issue: every issue must set a **Type**. Type is the repo's issue type, not a Project field (the R&D Sprint Board has no Type field). List the existing types live and pick one; never invent a value:
+   `gh api graphql -f query='query{repository(owner:"Thiink-LLC",name:"<repo>"){issueTypes(first:50){nodes{name}}}}' -q '.data.repository.issueTypes.nodes[].name'`
+   For teos on 2026-10-23 they were Task, Bug, Feature, Spike, Study, Long-Lived, Support. The live query wins if they differ.
+   Then `gh label list -R Thiink-LLC/<repo>` (existing labels only), then `gh issue create -R Thiink-LLC/<repo> -t "<short task-name title, no W-id>" -b "<body>" -a mariotoffia -l "<labels>" --type "<Type>"`. Check it took: `gh issue view <N> -R Thiink-LLC/<repo> --json issueType -q .issueType.name`. Node id: `gh issue view <N> -R Thiink-LLC/<repo> --json id -q .id`.
 2. Priority + Size:
 ```
 gh api graphql -f query='mutation($i:ID!,$p:ID!,$s:ID!){setIssueFieldValue(input:{issueId:$i,issueFields:[{fieldId:"IFSS_kgDOAVq1qQ",singleSelectOptionId:$p},{fieldId:"IFSS_kgDOAsLCxw",singleSelectOptionId:$s}]}){clientMutationId}}' -f i=<ISSUE_NODE_ID> -f p=<PRIO_OPT> -f s=<SIZE_OPT>
