@@ -96,7 +96,8 @@ gh project item-edit --project-id PVT_kwDOBoJzxs4BKY5X --id $ITEM --field-id PVT
 
 ## Clean caches
 After a task finishes (done, PR pushed), its coordinator (Dev Lead code, QA Lead tests, Platform Lead infra) runs or delegates `make clean-caches` in `/workspace/repos/teos`, only when minions are in sync:
-- `pgrep -af 'go (build|test|run)|golangci|floci|cdk|jsii'` is empty and no sub task is mid-run. Otherwise wait and retry; never kill another minion's run.
+- Run `make clean-caches`. It refuses and lists active runs (go build/test, golangci-lint, Floci, CDK) and exits non-zero without deleting anything. Then wait and retry; never kill another minion's run. `FORCE=1` only on Mario's explicit say-so.
+- It also refuses (exit 2, nothing deleted) when it cannot read the process list or Docker; report that to your coordinator rather than force it.
 - "directory not empty" from `go clean -cache`: a build started; wait and rerun.
 - Log in STATUS.md with `df -h /` and `df -i /`. Over 85% disk or inodes: tell the CTO at once.
 

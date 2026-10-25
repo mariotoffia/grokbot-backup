@@ -734,6 +734,18 @@
       "state": "released",
       "status": "released",
       "released": "2026-10-24T12:56:10+02:00"
+    },
+    {
+      "work_id": "W-2026-0001",
+      "task": "floci-harness-run",
+      "globs": [
+        "<exclusive Floci service/integration harness run>"
+      ],
+      "holder": "golang-pro ingestionsvc-followup #1281 ingestion-service",
+      "since": "2026-10-25T19:42:33+01:00",
+      "state": "released",
+      "status": "released",
+      "released": "2026-10-25T19:45:47+01:00"
     }
   ]
 }
