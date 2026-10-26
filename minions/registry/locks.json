@@ -746,6 +746,26 @@
       "state": "released",
       "status": "released",
       "released": "2026-10-25T19:45:47+01:00"
+    },
+    {
+      "work_id": "W-2026-0004",
+      "task": "g4.cert-temp",
+      "branch": "minion/g4-cert-temp",
+      "repo": "Thiink-LLC/teos",
+      "globs": [
+        "go-core/utils/testutils/localenv/{certificates,lifecycle,environment,owner}*.go",
+        "go-core/utils/testutils/localenv/*_internal_test.go",
+        "cmd/cbtest/op_local_env*.go",
+        "scripts/clean-temp/*",
+        "go-core/docs/testing/local-environments.md",
+        "floci: localenv integration run (own TMPDIR)"
+      ],
+      "holder": "golang-pro",
+      "owner": "golang-pro",
+      "since": "2026-10-26T10:45:00+01:00",
+      "status": "active",
+      "state": "review-r1-pushed",
+      "worktree": "/workspace/repos/teos/.worktrees/g4-cert-temp"
     }
   ]
 }

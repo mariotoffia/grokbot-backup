@@ -107,7 +107,7 @@ After a task finishes (done, PR pushed), its coordinator (Dev Lead code, QA Lead
 - Every minion appends on start, milestone, block, finish: `- <YYYY-MM-DD HH:MM> <slug> <start|milestone|blocked|done>: <≤1 sentence>`. Append only.
 - **BOARD.md** (owner coordinator, every status change): "Legend", "How to update this board", one table `Task | Sub task | Description | Status | Last updated`, then "Blocked on Mario".
   - Parent row (blank Sub task, Description starts with W-id) plus one row per sub task.
-  - Status icons only: ✅ done, 🔄 progress, 📐 designed, 👀 PR created and waiting for human review (reviews + Copilot clean, checks green), ⏳ waiting. New items ⏳. Keep done rows.
+  - Status icons only: ✅ done, 🔄 progress, 📐 designed, 👀 PR created and waiting for human review (reviews + Copilot clean, checks green), ⏳ waiting. New items ⏳. Done rows: purge rule in BOARD.md "How to update this board".
   - Short unique dotted lowercase names (`makefile.linux`, `floci.groundzero`); remote ids kept (`27.16.3`).
   - Last updated: real Stockholm `YYYY-MM-DD HH:MM` (convert UTC; else file mtime; never invent).
   - The CTO watchdog posts the board to buzz `teos-grok`.

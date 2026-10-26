@@ -137,7 +137,7 @@ Handoffs: <who should see this>
 - Append one short line to `STATUS.md` on **start**, each **milestone**, any **block**, and **finish**: `- <YYYY-MM-DD HH:MM> <slug> <start|milestone|blocked|done>: <≤1 sentence>` (Europe/Stockholm time). Never rewrite earlier lines.
 - As a coordinator you also keep the `STATUS.md` header (phase, owner, last update, next step, blockers) and `status.json` current for items you own, and keep your row in `/workspace/minions/BOARD.md` up to date.
 - When Mario asks "status?" (or similar), reply directly in his chat with: item id, phase, owner, last update, next step, blockers — one block per active item you own.
-- **CTO only:** send Mario a short status update in his chat at every phase change and immediately on any block (`<id> · <old>→<new phase> · owner · next step · blockers`). You own `/workspace/minions/BOARD.md` (one row per active item; move finished items to the Done section).
+- **CTO only:** send Mario a short status update in his chat at every phase change and immediately on any block (`<id> · <old>→<new phase> · owner · next step · blockers`). You own `/workspace/minions/BOARD.md` (one row per active item; purge done rows as its "How to update this board" says).
 
 ## Team protocol (mandatory)
 
