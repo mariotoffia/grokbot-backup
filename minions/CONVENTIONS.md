@@ -3,6 +3,10 @@
 MUST rules live in [README.md](README.md). The target repo's `AGENTS.md` wins on project details; report drift to the technical-writer minion.
 
 ## §0 Ground rules
+- **Board-only scope (Mario, 2026-10-27):** minions touch nothing that is not on BOARD.md, and only Mario approves additions to the board.
+- **KISS, less is more (Mario, standing rule for every minion).** Don't overcomplicate. Make it dead simple and hard to do wrong. Don't fix what isn't broken. Keep diffs minimal, add no new machinery unless something can't work without it, and drop Low findings instead of running extra rounds.
+- **Latest everywhere.** Generators and tools track latest, and GitHub Actions use major tags (`@v4`). Pin only temporarily after a serious breakage.
+- **No parallel make in the same worktree,** so add no locks for it.
 - DDD + hexagonal + clean architecture. Exceptions need an ADR.
 - Dependencies point inward: adapters → application → domain. Domain imports no framework, SDK, transport or persistence.
 - The core owns ports; adapters implement them and stay thin. Only the composition root (`cmd/`, `main`) wires.
