@@ -19,9 +19,9 @@ Details live in `work/<id>/STATUS.md`.
 
 | Task | Sub task | Description | Status | Last updated |
 |---|---|---|---|---|
-| teos.test.integration.coverage | | W-2026-0009: find missing integration tests runnable locally on Floci; sub tasks added as identified. Added by Mario 2026-11-01 14:44 (owner dev-lead, cto-204). GO by Mario 2026-11-01 22:39 (t140u): all rows except alarm-service (not ready for testing); flow-gap sweep of existing service-tests (investigation only, new rows need Mario approval). eventsvc.buildingtracker.sqs.integration #1410 merged 2026-11-02 15:07 | 🔄 | 2026-11-02 15:10 |
-| teos.test.e2e.coverage | | W-2026-0010: find missing e2e tests runnable locally on Floci; sub tasks added as identified. Added by Mario 2026-11-01 14:44 (owner dev-lead, cto-204). GO by Mario 2026-11-01 22:39 (t140u): all rows except alarm-service (not ready for testing); flow-gap sweep of existing service-tests (investigation only, new rows need Mario approval). eventsvc.service-test #1414 merged 2026-11-02 15:40 | 🔄 | 2026-11-02 15:40 |
 
 ## Blocked on Mario
-- teos.test.integration.coverage + teos.test.e2e.coverage: approve or reject the 11 new test rows in work/W-2026-0009-test-coverage/flow-gaps.md (nothing goes on the board without yes).
+- 2026-11-06 19:38: W-2026-0009 + W-2026-0010 MERGED by Mario t199u (all 8 PRs). Board purged. Cleanup done (rcm-1471 / Dev Lead 1473). Still waiting go: arch.guard (W-0005).
+
 - arch.guard (W-2026-0005): still waiting for your go (not on the board).
+- 39.21 ECR_TLS_URI one-liner and SUR 27.39 drop-skip were NOT boarded (Mario picked all-8 only).
